@@ -27,7 +27,6 @@ maven {
 
 dependencies {
 compileOnly 'io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT'
-compileOnly 'ac.grim.grimac:grimac:2.3.67'
 }
 
 java {
