@@ -3,4 +3,13 @@ version: 1.0.0
 main: me.aura.anticheat.AuraAntiCheat
 api-version: '1.21'
 author: Aura
-description: Aura AntiCheat plugin
+description: Independent anti-cheat for Paper servers
+
+permissions:
+  auraac.alerts:
+    description: Receive AuraAntiCheat alerts
+    default: op
+
+  auraac.bypass:
+    description: Exempt a player from AuraAntiCheat checks
+    default: false
