@@ -1,0 +1,6 @@
+name: AuraAntiCheat
+version: 1.0.0
+main: me.aura.anticheat.AuraAntiCheat
+api-version: '1.21'
+author: Aura
+description: Aura AntiCheat plugin
