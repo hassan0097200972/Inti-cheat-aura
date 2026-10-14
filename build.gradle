@@ -1,27 +1,37 @@
 plugins {
-    id 'java'
+id 'java'
 }
 
 group = 'me.aura'
 version = '1.0.0'
 
 repositories {
-    mavenCentral()
-    maven {
-        url = 'https://repo.grim.ac/snapshots'
-    }
-    maven {
-        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
-    }
+mavenCentral()
+
+maven {
+    name = 'papermc'
+    url = 'https://repo.papermc.io/repository/maven-public/'
+}
+
+maven {
+    name = 'grimac'
+    url = 'https://repo.grim.ac/snapshots'
+}
+
+maven {
+    name = 'spigotmc'
+    url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+}
+
 }
 
 dependencies {
-    compileOnly 'io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT'
-    compileOnly 'ac.grim.grimac:grimac:2.3.67'
+compileOnly 'io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT'
+compileOnly 'ac.grim.grimac:grimac:2.3.67'
 }
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
+toolchain {
+languageVersion = JavaLanguageVersion.of(21)
+}
 }
